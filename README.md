@@ -24,22 +24,22 @@ ScikitPipe is a Python project designed to simplify the process of building and 
 
     ```json
     {
-    "data_preparation": {
-        "imputer": {
-            "strategy": "mean"
+        "data_preparation": {
+            "imputer": {
+                "strategy": "mean"
+            },
+            "scaler": "standard"
         },
-        "scaler": "standard"
-    },
-    "classifier": {
-        "algorithm": "RandomForest",
-        "parameters": {
-            "n_estimators": 100,
-            "max_depth": 5
+        "classifier": {
+            "algorithm": "RandomForest",
+            "parameters": {
+                "n_estimators": 100,
+                "max_depth": 5
+            }
+        },
+        "visualization": {
+            "confusion_matrix": true
         }
-    },
-    "visualization": {
-        "confusion_matrix": true
-    }
     }
 
 2. Run the main.py script with the path to your configuration file:
